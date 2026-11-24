@@ -1,0 +1,28 @@
+{
+  "domain_admins": [
+    "lab-admin"
+  ],
+  "approved_domain_admins": [
+    "lab-admin"
+  ],
+  "service_accounts": [
+    {
+      "name": "reporting-gmsa",
+      "enabled": true,
+      "password_never_expires": true,
+      "managed": true
+    }
+  ],
+  "shares": [
+    {
+      "name": "case-files",
+      "access": [
+        {
+          "principal_sid": "S-1-5-21-111-222-333-1101",
+          "type": "Allow",
+          "right": "Change"
+        }
+      ]
+    }
+  ]
+}

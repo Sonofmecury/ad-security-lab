@@ -1,0 +1,29 @@
+{
+  "domain_admins": [
+    "lab-admin",
+    "former-support"
+  ],
+  "approved_domain_admins": [
+    "lab-admin"
+  ],
+  "service_accounts": [
+    {
+      "name": "legacy-reporting",
+      "enabled": true,
+      "password_never_expires": true,
+      "managed": false
+    }
+  ],
+  "shares": [
+    {
+      "name": "case-files",
+      "access": [
+        {
+          "principal_sid": "S-1-5-11",
+          "type": "Allow",
+          "right": "Change"
+        }
+      ]
+    }
+  ]
+}
